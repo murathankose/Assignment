@@ -13,4 +13,9 @@ public class TestUtil {
 
   @Test
   public void example() { assertTrue(true); }
+  @Test
+ public void testLength1(){
+   int[] array=new int[1];
+   assertFalse(c.compute(array));
+ }
 }
