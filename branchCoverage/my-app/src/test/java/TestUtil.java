@@ -18,4 +18,9 @@ public class TestUtil {
    int[] array=new int[1];
    assertFalse(c.compute(array));
  }
+ @Test
+  public void testMode2(){
+    int[] array=new int[2];
+    assertFalse(c.compute(array));
+  }
 }
