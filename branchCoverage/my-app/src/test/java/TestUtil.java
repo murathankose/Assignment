@@ -31,4 +31,12 @@ public class TestUtil {
     array[2]=2;
     c.compute(array);
   }
+  @Test
+  public void testDivisibleSum(){
+    int[] array=new int[3];
+    array[0]=3;
+    array[1]=1;
+    array[2]=2;
+    assertTrue(c.compute(array));
+  }
 }
