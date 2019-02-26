@@ -23,4 +23,12 @@ public class TestUtil {
     int[] array=new int[2];
     assertFalse(c.compute(array));
   }
+  @Test(expected=RuntimeException.class)
+  public void testArrayHaveZero(){
+    int[] array=new int[3];
+    array[0]=0;
+    array[1]=1;
+    array[2]=2;
+    c.compute(array);
+  }
 }
