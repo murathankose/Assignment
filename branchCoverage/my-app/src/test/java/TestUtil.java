@@ -39,4 +39,12 @@ public class TestUtil {
     array[2]=2;
     assertTrue(c.compute(array));
   }
+  @Test
+  public void testNotDivisibleSum(){
+    int[] array=new int[3];
+    array[0]=4;
+    array[1]=5;
+    array[2]=2;
+    assertFalse(c.compute(array));
+  }
 }
